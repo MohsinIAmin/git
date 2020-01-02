@@ -3,7 +3,7 @@ DEPS = fun.h
 OBJ = add.c main.c
 
 all:	$(OBJ)
-		$(CC) -o $@ $^ -o Test
+		$(CC) -o $@ $^
 		
 %.o:	%.c $(DEPS)
 			$(CC) -c -o $@ $<
